@@ -1,0 +1,200 @@
+$color-white: white;
+$color-black: black;
+$color-primary: #bababa;
+$color-secondary: #0f6bae;
+$color-tertiary: #fcd783;
+$color-fourth: #e1e8ec;
+$color-fith: #248bd6;
+$color-six: #f9b900;
+$color-seven: #2cb67d;
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+  background-color: $color-fourth;
+  color: gray;
+  height: 10vh;
+}
+.register {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  button {
+    padding: 1vh;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 1.1em;
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
+    background-color: $color-white;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: all 1000ms;
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-white;
+      border: 1px dashed $color-white;
+    }
+  }
+}
+.memberList {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.memberCard {
+  width: 50%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  &--saving {
+    border: 4px solid $color-primary;
+    .memberCard__accountType {
+      background-color: $color-fourth;
+      font-style: italic;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+      padding-top: 2px;
+      padding-bottom: 4px;
+    }
+
+    .memberCard__accountName {
+      border-bottom: 2px solid $color-primary;
+
+      display: flex;
+      justify-content: center;
+      font-size: 1.4em;
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+      }
+    }
+  }
+  &--current {
+    border: 4px solid $color-secondary;
+    .memberCard__accountType {
+      background-color: $color-fith;
+      font-style: italic;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+      padding-top: 2px;
+      padding-bottom: 4px;
+    }
+
+    .memberCard__accountName {
+      border-bottom: 2px solid $color-secondary;
+
+      display: flex;
+      justify-content: center;
+      font-size: 1.4em;
+
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+      }
+    }
+  }
+  &--gold {
+    border: 4px solid $color-tertiary;
+    .memberCard__accountType {
+      background-color: $color-six;
+      font-style: italic;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      font-size: 1.3em;
+      padding-top: 2px;
+      padding-bottom: 4px;
+    }
+    .memberCard__accountName {
+      border-bottom: 2px solid $color-tertiary;
+      display: flex;
+      justify-content: center;
+      font-size: 1.4em;
+      padding-left: 10px;
+
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+      }
+    }
+  }
+  /* &__accountType {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+  } */
+  &__accountName {
+    display: flex;
+    justify-content: center;
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__details {
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      li:nth-child(1) {
+        // font-weight: bold;
+        font-size: 1.1em;
+      }
+      li:nth-child(2) {
+        //font-weight: bold;
+        font-size: 1.2em;
+      }
+      li:nth-child(3) {
+        font-weight: bold;
+        font-size: 1.4em;
+        color: #8546f0;
+      }
+    }
+    &__solde {
+      // background-color: red;
+      width: 50%;
+    }
+    &__action {
+      //background-color: blue;
+      height: 100%;
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+      button {
+        padding: 1.5vh;
+        border-radius: 2vh;
+        background-color: $color-white;
+        border: 1px solid $color-seven;
+        color: $color-seven;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 800ms;
+        &:hover {
+          border: 1px dashed $color-white;
+          background-color: $color-seven;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

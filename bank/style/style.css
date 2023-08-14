@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+  background-color: #e1e8ec;
+  color: gray;
+  height: 10vh;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+.register button {
+  padding: 1vh;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 1.1em;
+  color: #0f6bae;
+  border: 1px solid #0f6bae;
+  background-color: white;
+  border-radius: 2vh;
+  cursor: pointer;
+  transition: all 1000ms;
+}
+.register button:hover {
+  background-color: #0f6bae;
+  color: white;
+  border: 1px dashed white;
+}
+
+.memberList {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.memberCard {
+  width: 50%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* &__accountType {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+  } */
+}
+.memberCard--saving {
+  border: 4px solid #bababa;
+}
+.memberCard--saving .memberCard__accountType {
+  background-color: #e1e8ec;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+.memberCard--saving .memberCard__accountName {
+  border-bottom: 2px solid #bababa;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+}
+.memberCard--saving .memberCard__accountName h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+.memberCard--current {
+  border: 4px solid #0f6bae;
+}
+.memberCard--current .memberCard__accountType {
+  background-color: #248bd6;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+.memberCard--current .memberCard__accountName {
+  border-bottom: 2px solid #0f6bae;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+}
+.memberCard--current .memberCard__accountName h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+.memberCard--gold {
+  border: 4px solid #fcd783;
+}
+.memberCard--gold .memberCard__accountType {
+  background-color: #f9b900;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+.memberCard--gold .memberCard__accountName {
+  border-bottom: 2px solid #fcd783;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  padding-left: 10px;
+}
+.memberCard--gold .memberCard__accountName h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+.memberCard__accountName {
+  display: flex;
+  justify-content: center;
+}
+.memberCard__accountName h2 {
+  padding: 0;
+  margin: 0;
+}
+.memberCard__details {
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.memberCard__details ul {
+  list-style-type: none;
+}
+.memberCard__details ul li:nth-child(1) {
+  font-size: 1.1em;
+}
+.memberCard__details ul li:nth-child(2) {
+  font-size: 1.2em;
+}
+.memberCard__details ul li:nth-child(3) {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #8546f0;
+}
+.memberCard__details__solde {
+  width: 50%;
+}
+.memberCard__details__action {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.memberCard__details__action button {
+  padding: 1.5vh;
+  border-radius: 2vh;
+  background-color: white;
+  border: 1px solid #2cb67d;
+  color: #2cb67d;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 800ms;
+}
+.memberCard__details__action button:hover {
+  border: 1px dashed white;
+  background-color: #2cb67d;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
